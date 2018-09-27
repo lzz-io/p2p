@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.lzz.p2p;
+package io.lzz.p2p.eureka;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
