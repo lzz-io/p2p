@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>io.lzz.p2p</groupId>
-    <artifactId>p2p-parent</artifactId>
+    <artifactId>p2p</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>p2p-eureka</artifactId>
