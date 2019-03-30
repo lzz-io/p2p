@@ -33,6 +33,12 @@ export default new Router({
             // which is lazy-loaded when the route is visited.
             component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
             title: '关于我们',
-        }
+        },
+        {
+            path: '/bootstrap',
+            name: 'bootstrap',
+            component: ()=>import('@/views/Bootstrap.vue'),
+            title: 'bootstrap',
+        },
     ]
 })

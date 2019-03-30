@@ -19,6 +19,7 @@
         },
         created: function () {
             console.log(this.$router)
+            console.log(this.routes)
         }
     }
 </script>
