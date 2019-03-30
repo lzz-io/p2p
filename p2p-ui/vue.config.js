@@ -8,35 +8,33 @@
 
 module.exports = {
 
-  // API_BASEURL: process.env.NODE_ENV === 'production'
-  //     ? 'http://api.p2p.lzz.io/'
-  //     : '/api/',
+    // API_BASEURL: process.env.NODE_ENV === 'production'
+    //     ? 'http://api.p2p.lzz.io/'
+    //     : '/api/',
 
-  // baseUrl指vue应用本身的部署的根目录
-  // baseUrl: process.env.NODE_ENV === 'production'
-  //     ? 'http://p2p.lzz.io/'
-  //     : '/',
+    // baseUrl指vue应用本身的部署的根目录
+    // baseUrl: process.env.NODE_ENV === 'production'
+    //     ? 'http://p2p.lzz.io/'
+    //     : '/',
 
-  // configureWebpack: config => {
-  //   if (process.env.NODE_ENV === 'production') {
-  //     // 为生产环境修改配置...
-  //   } else {
-  //     // 为开发环境修改配置...
-  //   }
-  // }
+    // configureWebpack: config => {
+    //   if (process.env.NODE_ENV === 'production') {
+    //     // 为生产环境修改配置...
+    //   } else {
+    //     // 为开发环境修改配置...
+    //   }
+    // }
 
-  devServer: {
-    port: 80, //default 8080
-    proxy: {
-      '/api': {
-        target: 'http://www.youdao.com/w/eng/',
-        changeOrigin: true,  // 设置这个参数可以避免跨域
-      }
-      // },
-      // '/foo': {
-      //   target: '<other_url>'
-      // }
+    devServer: {
+        port: 80, //default 8080
+        // open: true,//打开浏览器
+        open: 'Google Chrome',
+        proxy: {
+            '/api': {
+                target: 'http://localhost:8080',
+                changeOrigin: true,  // 设置这个参数可以避免跨域
+            }
+        }
     }
-  }
 
 }

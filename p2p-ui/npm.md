@@ -43,7 +43,7 @@ npm outdated
 npm update
 ```
 
-===貌似npm update也能升级到最新，下面没啥用。
+~~===貌似npm update也能升级到最新，下面没啥用。~~
 
 ### 高效升级插件npm-check-updates
 
@@ -65,7 +65,7 @@ ncu
 这说明有些包需要升级 这时候我们使用
 
 ```
-ncu -a
+ncu -u
 ```
 
 就可以全部升级了。

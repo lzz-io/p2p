@@ -1,40 +1,33 @@
 # p2p-ui
 
-## install @vue/cli
-
-```bash
-npm install -g @vue/cli
-
-vue --version
-```
-
 ## Project setup
-```sh
+```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
-```bash
+```
 npm run serve
-
-npx vue-cli-service serve
-npx vue-cli-service serve --mode production
 ```
 
 ### Compiles and minifies for production
-```bash
+```
 npm run build
 ```
 
+### Run your tests
+```
+npm run test
+```
+
 ### Lints and fixes files
-```sh
+```
 npm run lint
 ```
 
-### run nodejs
-```sh
-node app.js
-```
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
 
 ### axios
 ```sh
