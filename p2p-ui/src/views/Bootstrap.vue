@@ -9,14 +9,14 @@
 </template>
 
 <script>
-    import $ from 'jquery'
-    import 'bootstrap'
-
-    $(function () {
-        alert('234')
-    })
-
-    export default {
-        name: 'App'
-    }
+    // import $ from 'jquery'
+    // import 'bootstrap'
+    //
+    // $(function () {
+    //     alert('234')
+    // })
+    //
+    // export default {
+    //     name: 'App'
+    // }
 </script>

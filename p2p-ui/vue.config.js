@@ -6,7 +6,8 @@
 // 你也可以使用 package.json 中的 vue 字段，
 // 但是注意这种写法需要你严格遵照 JSON 的格式来写。
 
-const webpack = require('webpack')
+// bootstrap && jquery
+// const webpack = require('webpack')
 
 module.exports = {
 
@@ -39,13 +40,14 @@ module.exports = {
         }
     },
 
-    configureWebpack: {
-        plugins: [
-            new webpack.ProvidePlugin({
-                $: "jquery",
-                jQuery: "jquery"
-            })
-        ]
-    },
+    // bootstrap && jquery
+    // configureWebpack: {
+    //     plugins: [
+    //         new webpack.ProvidePlugin({
+    //             $: "jquery",
+    //             jQuery: "jquery"
+    //         })
+    //     ]
+    // },
 
 }
