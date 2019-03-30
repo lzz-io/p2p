@@ -7,7 +7,7 @@
 // 但是注意这种写法需要你严格遵照 JSON 的格式来写。
 
 // bootstrap && jquery
-// const webpack = require('webpack')
+const webpack = require('webpack')
 
 module.exports = {
 
@@ -41,13 +41,13 @@ module.exports = {
     },
 
     // bootstrap && jquery
-    // configureWebpack: {
-    //     plugins: [
-    //         new webpack.ProvidePlugin({
-    //             $: "jquery",
-    //             jQuery: "jquery"
-    //         })
-    //     ]
-    // },
+    configureWebpack: {
+        plugins: [
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery"
+            })
+        ]
+    },
 
 }
