@@ -12,16 +12,21 @@ const webpack = require('webpack')
 module.exports = {
 
     // build不生成.map文件
-    productionSourceMap: false,
+    // productionSourceMap: false,
 
     // API_BASEURL: process.env.NODE_ENV === 'production'
     //     ? 'http://api.p2p.lzz.io/'
     //     : '/api/',
 
+    // 从 Vue CLI 3.3 起已弃用，请使用publicPath。
     // baseUrl指vue应用本身的部署的根目录
     // baseUrl: process.env.NODE_ENV === 'production'
     //     ? 'http://p2p.lzz.io/'
     //     : '/',
+    // publicPath: '/', // Default: '/'
+    // publicPath: process.env.NODE_ENV === 'production'
+    //         ? '/production-sub-path/'
+    //         : '/',
 
     // configureWebpack: config => {
     //   if (process.env.NODE_ENV === 'production') {
