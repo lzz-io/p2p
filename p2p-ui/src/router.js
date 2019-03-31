@@ -11,19 +11,25 @@ export default new Router({
             path: '/',
             name: 'index',
             component: Index,
-            title: '首页',
+            meta: {
+                title: '首页',
+            }
         },
         {
             path: '/bid',
             name: 'bid',
             component: Index,
-            title: '我要投资',
+            meta: {
+                title: '我要投资',
+            }
         },
         {
             path: '/',
             name: 'user',
             component: Index,
-            title: '用户中心',
+            meta: {
+                title: '用户中心',
+            }
         },
         {
             path: '/about',
@@ -32,13 +38,17 @@ export default new Router({
             // this generates a separate chunk (about.[hash].js) for this route
             // which is lazy-loaded when the route is visited.
             component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
-            title: '关于我们',
+            meta: {
+                title: '关于我们',
+            }
         },
         {
             path: '/bootstrap',
             name: 'bootstrap',
-            component: ()=>import('@/views/Bootstrap.vue'),
-            title: 'bootstrap',
+            component: () => import('@/views/Bootstrap.vue'),
+            meta: {
+                title: 'bootstrap',
+            }
         },
     ]
 })

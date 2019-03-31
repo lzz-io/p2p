@@ -11,6 +11,9 @@ const webpack = require('webpack')
 
 module.exports = {
 
+    // build不生成.map文件
+    productionSourceMap: false,
+
     // API_BASEURL: process.env.NODE_ENV === 'production'
     //     ? 'http://api.p2p.lzz.io/'
     //     : '/api/',
@@ -27,6 +30,15 @@ module.exports = {
     //     // 为开发环境修改配置...
     //   }
     // }
+    // bootstrap && jquery
+    configureWebpack: {
+        plugins: [
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery"
+            })
+        ]
+    },
 
     devServer: {
         port: 80, //default 8080
@@ -38,16 +50,6 @@ module.exports = {
                 changeOrigin: true,  // 设置这个参数可以避免跨域
             }
         }
-    },
-
-    // bootstrap && jquery
-    configureWebpack: {
-        plugins: [
-            new webpack.ProvidePlugin({
-                $: "jquery",
-                jQuery: "jquery"
-            })
-        ]
     },
 
 }
