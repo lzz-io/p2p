@@ -18,15 +18,15 @@ export default new Router({
         {
             path: '/bid',
             name: 'bid',
-            component: Index,
+            component: () => import('./views/Bid.vue'),
             meta: {
                 title: '我要投资',
             }
         },
         {
-            path: '/',
+            path: '/user',
             name: 'user',
-            component: Index,
+            component: () => import('./views/User.vue'),
             meta: {
                 title: '用户中心',
             }
@@ -41,14 +41,6 @@ export default new Router({
             meta: {
                 title: '关于我们',
             }
-        },
-        {
-            path: '/bootstrap',
-            name: 'bootstrap',
-            component: () => import('@/views/Bootstrap.vue'),
-            meta: {
-                title: 'bootstrap',
-            }
-        },
+        }
     ]
 })

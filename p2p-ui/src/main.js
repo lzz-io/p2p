@@ -9,9 +9,12 @@ import store from './store'
 Vue.config.productionTip = false
 
 // 页面设置title
+const websiteTitle = document.title
 router.beforeEach((to, from, next) => {
     if (to.meta.title) {
-        document.title = to.meta.title + " - " + document.title
+        document.title = to.meta.title + " - " + websiteTitle
+    } else {
+        document.title = websiteTitle
     }
     next()
 })
