@@ -29,16 +29,15 @@
     }
 </script>
 
-<style scoped>
+<style>
+    @import "./assets/main.css";
+
     #app {
-        font-family: '宋体', 'Avenir', Helvetica, Arial, sans-serif;
+        /*font-family: '宋体', 'Avenir', Helvetica, Arial, sans-serif;*/
         /*text-align: center;*/
         /*color: #2c3e50;*/
         color: #666666;
         /*margin-top: 60px;*/
     }
 
-    div {
-        border: 1px solid #000000;
-    }
 </style>
