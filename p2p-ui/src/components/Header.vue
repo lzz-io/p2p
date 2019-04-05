@@ -1,7 +1,7 @@
 <template>
     <header id="header">
         <!--logo-->
-        <div class="container p-0">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <a class="d-block" href="/" title="陆金所">
@@ -13,7 +13,7 @@
 
         <!--导航栏-->
         <nav id="navbar">
-            <div class="container p-0">
+            <div class="container">
                 <ul class="nav">
                     <li class="nav-item col-3 col-md-2 p-0" v-bind:key="item.name+index" v-for="(item,index) in routes">
                         <router-link :to="item.path" class="nav-link">{{item.meta.title}}</router-link>
