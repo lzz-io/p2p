@@ -1,4 +1,4 @@
 spring:
   application:
-    name: eureka
+    name: p2p-eureka
     
