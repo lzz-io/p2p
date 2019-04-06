@@ -1,6 +1,27 @@
 server:
-  #  port: 8081
-  port: 0
+  port: 8080
+
+logging:
+  level:
+    root: info
+    
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      
+#      routes:
+#      - id: user
+#        order: 8000
+#        uri: lb://p2p-user
+#        predicates:
+#        - Path=/user/**
+#        filters:
+#        - StripPrefix=1
+          
 
 eureka:
   client:

@@ -24,7 +24,7 @@ export default new Router({
             }
         },
         {
-            path: '/user',
+            path: '/api',
             name: 'user',
             component: () => import('./views/User.vue'),
             meta: {

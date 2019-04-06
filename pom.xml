@@ -10,7 +10,8 @@
     <description>p2p</description>
 
     <modules>
-        <module>p2p-eureka</module>
+        <module>p2p-api-gateway</module>
+		<module>p2p-eureka</module>
         <module>p2p-user</module>
     </modules>
 
