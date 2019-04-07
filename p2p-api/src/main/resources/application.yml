@@ -1,7 +1,17 @@
 server:
-  #  port: 8081
-  port: 0
+  port: 8080
 
+logging:
+  level:
+    root: info
+
+zuul:
+  routes:
+    p2p-user:
+      path: /user/**
+      service-id: p2p-user
+      strip-prefix: false
+        
 eureka:
   client:
     service-url:

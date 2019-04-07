@@ -40,6 +40,7 @@ public class UserController {
 
     @Autowired
     private Environment environment;
+
     // 当application.yml配置文件中没有指定服务启动端口时，
     // 不能使用@LocalServerPort和@Value(
     // "${local.server.port}")的方法获取端口号，
